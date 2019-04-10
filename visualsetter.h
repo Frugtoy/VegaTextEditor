@@ -12,16 +12,19 @@ public:
     void setBgColor(const QColor bgColor);
     void setFontSize(int size);
     void setTextBgColor(const QColor);
+
     ~VisualSetter();
     QColor bgColor;
     QColor fontColor;
     QColor textBgColor;
+    QString fontStyle;
+    int fontSize;
 private:
     QTextEdit *setter;
-    int fontSize;
+
    //QColor bgColor  and also fontColorhere is not provided by a function in mainwindow.cpp//
 
-    QString fontStyle;
+
 };
 
 #endif // VISUALSETTER_H

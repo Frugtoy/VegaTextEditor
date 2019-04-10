@@ -12,39 +12,33 @@ VisualSetter::VisualSetter(QTextEdit*text)
     bgColor = Qt::DEFAULT_BG_COLOR;
     fontColor = Qt::DEFAULT_TEXT_COLOR;
 }
-/*void VisualSetter::setFontStyle(const QString event)
+void VisualSetter::setFontStyle(const QString style)
 {
-  fontSize = event;
-  setter->setFontFamily(fontSize);
-}*/
-void VisualSetter::setFontColor(const QColor event)
-{
-  fontColor=event;
-  setter->setTextColor(event);
-
-
+    this->fontStyle = style;
+    setter->setFontFamily(this->fontStyle);
 }
-void VisualSetter::setBgColor(const QColor event)
+void VisualSetter::setFontColor(const QColor color)
 {
- QPalette col = setter->palette();
-
- col.setColor(QPalette::Base,event);
- setter->setPalette(col);
+    this->fontColor=color;
+    setter->setTextColor(this->fontColor);
 }
-void VisualSetter::setFontSize(int event)
+void VisualSetter::setBgColor(const QColor bg_color)
 {
-  this->fontSize =event;
-  setter->setFontPointSize(fontSize);
+    QPalette col = setter->palette();
+    col.setColor(QPalette::Base,bg_color);
+    setter->setPalette(col);
 }
-void VisualSetter::setTextBgColor(const QColor event)
+void VisualSetter::setFontSize(int font_size)
 {
-  this->textBgColor = event;
-  setter->setTextBackgroundColor(event);
+    this->fontSize = font_size;
+    setter->setFontPointSize(this->fontSize);
 }
-VisualSetter::~VisualSetter()
+void VisualSetter::setTextBgColor(const QColor text_bg_color)
 {
-
+    this->textBgColor = text_bg_color;
+    setter->setTextBackgroundColor(this->textBgColor);
 }
+VisualSetter::~VisualSetter(){}
 
 
 

@@ -27,12 +27,15 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     filemanager.cpp \
-    visualsetter.cpp
+    visualsetter.cpp \
+    compiler.cpp
 
 HEADERS += \
         mainwindow.h \
     filemanager.h \
-    visualsetter.h
+    visualsetter.h \
+    visualsetter.h \
+    compiler.h
 
 FORMS += \
         mainwindow.ui

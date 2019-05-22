@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <filemanager.h>
 #include <visualsetter.h>
-
+#include <compiler.h>
 namespace Ui {
 class MainWindow;
 }
@@ -27,12 +27,13 @@ private slots:
     void change_font_size_slot();
     void change_bg_color_slot();
     void change_text_bg_slot();
-
+    void compile_slot();
 private:
     Ui::MainWindow* ui;
     FileManager* file_manager;
     VisualSetter* setter;
-  };
+    Compiler* compiler;
+};
 
 
 #endif // MAINWINDOW_H

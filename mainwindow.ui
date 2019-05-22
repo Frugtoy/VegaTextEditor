@@ -41,6 +41,8 @@
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
     <addaction name="actionCreate"/>
+    <addaction name="Compile"/>
+    <addaction name="actionRun"/>
    </widget>
    <widget class="QMenu" name="Font_Style">
     <property name="title">
@@ -53,8 +55,14 @@
     <addaction name="separator"/>
     <addaction name="Change_Background_Color"/>
    </widget>
+   <widget class="QMenu" name="del">
+    <property name="title">
+     <string>Compile</string>
+    </property>
+   </widget>
    <addaction name="menufile"/>
    <addaction name="Font_Style"/>
+   <addaction name="del"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -103,6 +111,16 @@
   <action name="Change_Text_Backqround_Color">
    <property name="text">
     <string>Change Backqround Text Color</string>
+   </property>
+  </action>
+  <action name="Compile">
+   <property name="text">
+    <string>Compile</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="text">
+    <string>Run</string>
    </property>
   </action>
  </widget>
